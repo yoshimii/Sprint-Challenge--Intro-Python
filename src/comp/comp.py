@@ -21,7 +21,7 @@ humans = [
     Human("David", 31),
 ]
 
-class NewHumans(Human):
+class NewHuman(Human):
     def __init__(self, name, age):
         self.name = name.upper()
         self.age = age + 5
@@ -66,7 +66,7 @@ print(f)
 # list, except with all the names uppercase and the ages with 5 added to them.
 # The "humans" list should be unmodified.
 print("All names uppercase:")
-g = [NewHumans(i.name, i.age) for i in humans]
+g = [NewHuman(i.name, i.age) for i in humans]
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
